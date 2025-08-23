@@ -1,0 +1,9 @@
+[network]
+hostname="myhostname"
+ip="1.2.3.4"
+dns="1.1.1.1"
+
+[sshd]
+enable_root=true
+
+
