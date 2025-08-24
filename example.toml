@@ -1,0 +1,19 @@
+[dep_comp]
+somekey=somevalue
+
+[comp1]
+foo=bar
+tar=zar
+
+[comp2]
+tick=tack
+tack=toe
+
+[app_1]
+components = [comp1, comp2]
+
+[app_2]
+components = [comp1]
+
+[app_3]
+components = [comp2]

@@ -1,0 +1,5 @@
+[network]
+hostname = "myhostname"
+
+[aide]
+packages = ["aide"]
