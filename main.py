@@ -7,7 +7,7 @@ import tomllib
 
 class Subconfig(UserDict[str, str]):
     def __sub__(self, other: Subconfig):
-        return Subconfig({k: v for k, v in self.items() if k not in other})
+        return Subconfig({k: v for k, v in self.items() if k not in other or v != other[k]})
 
     def __add__(self, other: Subconfig):
         return Subconfig({**self, **other})
